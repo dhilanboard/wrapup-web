@@ -1,6 +1,168 @@
 h1 {
   border: 7px solid #666; }
 
-h1 {
-  color: brown;
-  margin: 0; }
+* {
+  -webkit-font-smoothing: antialiased;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box; }
+
+html, body {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0; }
+
+body {
+  background-color: #F0F0F0;
+  font-size: 16px;
+  font-family: "Roboto", sans-serif; }
+
+.img-responsive {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  vertical-align: middle;
+  border: 0; }
+
+.flex-box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }
+
+.flex-box-center {
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  -ms-grid-row-align: center;
+  align-items: center; }
+
+.flex-box-start {
+  -webkit-box-align: start;
+  -ms-flex-align: start;
+  -ms-grid-row-align: flex-start;
+  align-items: flex-start; }
+
+.layout-main {
+  -webkit-box-flex: 1;
+  -ms-flex: 1;
+  flex: 1; }
+
+.section-header {
+  height: 80px;
+  padding: 0 20px;
+  background-color: #fff; }
+  .section-header .brand {
+    -webkit-box-flex: 1;
+    -ms-flex: 1;
+    flex: 1; }
+  .section-header .search {
+    -webkit-box-flex: 2;
+    -ms-flex: 2;
+    flex: 2; }
+    .section-header .search .search-box {
+      background-color: #FBFBFB;
+      border: 1px solid #E0E0E0;
+      height: 40px;
+      border-radius: 40px; }
+      .section-header .search .search-box i {
+        margin-left: 20px;
+        margin-right: 10px;
+        padding-right: 10px;
+        border-right: 1px solid #E0E0E0; }
+      .section-header .search .search-box input[type="search"] {
+        -webkit-appearance: none;
+        height: 38px;
+        border: 0;
+        width: 85%;
+        background-color: #FBFBFB;
+        outline: none;
+        border-radius: 0 22px 22px 0;
+        font-size: 16px;
+        line-height: 1.2em; }
+  .section-header .social {
+    -webkit-box-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
+    text-align: right; }
+    .section-header .social ul {
+      list-style-type: none; }
+      .section-header .social ul li {
+        display: inline-block; }
+        .section-header .social ul li a {
+          background-color: #999;
+          display: block;
+          text-decoration: none;
+          height: 26px;
+          width: 26px;
+          border-radius: 20px;
+          color: #fff;
+          font-size: 18px;
+          padding: 4px 0 0 0;
+          text-align: center;
+          margin-left: 6px; }
+          .section-header .social ul li a.icon-social-facebook {
+            background-color: #1764A1; }
+          .section-header .social ul li a.icon-social-twitter {
+            background-color: #26A9E0; }
+          .section-header .social ul li a.icon-social-linkedin {
+            background-color: #1C75BC; }
+
+.category-bar {
+  width: 100px;
+  background-color: #513653; }
+  .category-bar .cate-title {
+    font-size: 14px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    text-align: center;
+    margin: 12px 0;
+    color: #E0E0E0;
+    font-weight: bold;
+    padding-bottom: 10px;
+    border-bottom: solid 1px #68516A; }
+  .category-bar ul.cate-list {
+    list-style-type: none;
+    padding: 0;
+    margin: 0; }
+    .category-bar ul.cate-list li {
+      display: block; }
+      .category-bar ul.cate-list li a {
+        text-decoration: none;
+        color: #FFFFFF;
+        display: block;
+        font-size: 12px;
+        text-align: center;
+        padding: 8px 5px;
+        white-space: nowrap; }
+        .category-bar ul.cate-list li a:hover, .category-bar ul.cate-list li a:focus, .category-bar ul.cate-list li a.active {
+          background-color: #00738e; }
+        .category-bar ul.cate-list li a .cate-icon {
+          width: 40px;
+          margin: 0 auto 5px;
+          opacity: 0.6; }
+        .category-bar ul.cate-list li a .cate-name {
+          overflow: hidden;
+          text-overflow: ellipsis;
+          text-transform: uppercase; }
+
+.news-container {
+  -webkit-box-flex: 1;
+  -ms-flex: 1;
+  flex: 1; }
+
+.section-promotion {
+  width: 350px;
+  height: 100%;
+  background-color: #153B67; }
+  .section-promotion .promo-header {
+    height: 80px;
+    background-color: #194A83;
+    font-family: "Roboto Condensed", sans-serif;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #ffffff;
+    text-align: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    font-size: 26px; }

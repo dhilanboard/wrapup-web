@@ -76,7 +76,7 @@ gulp.task('serve', ['sass'], function() {
 });
 
 
-gulp.task('default', ['index', 'imageop', 'serve']);
+gulp.task('default', ['index', 'scripts', 'imageop', 'serve']);
 
 
 

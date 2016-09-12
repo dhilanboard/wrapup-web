@@ -1,6 +1,176 @@
 @import "app";
+@import "reset";
+@import "variables";
 
-h1 {
-    color: brown;
-    margin: 0;
+body {
+  background-color: $app-bg;
+  font-size: 16px;
+  font-family: $roboto;
+}
+
+.img-responsive {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    vertical-align: middle;
+    border: 0;
+}
+
+.flex-box {
+  display: -webkit-flex;
+  display: flex;
+}
+
+.flex-box-center {
+  -webkit-align-items: center;
+   align-items: center;
+}
+
+.flex-box-start {
+  -webkit-align-items: flex-start;
+   align-items: flex-start;;
+}
+
+// Main Layout
+.layout-main {
+  -webkit-flex: 1;
+          flex: 1;
+}
+
+// Header Component
+.section-header {
+  height: 80px;
+  padding: 0 20px;
+  background-color: #fff;
+  .brand {
+    flex: 1;
+  }
+  .search {
+    flex: 2;
+    .search-box {
+      background-color: #FBFBFB;
+      border: 1px solid #E0E0E0;
+      // width: 480px;
+      height: 40px;
+      border-radius: 40px;
+      i {
+        margin-left: 20px;
+        margin-right: 10px;
+        padding-right: 10px;
+        border-right: 1px solid #E0E0E0;
+      }
+      input[type="search"] {
+        -webkit-appearance: none;
+        height: 38px;
+        border: 0;
+        width: 85%;
+        background-color: #FBFBFB;
+        outline: none;
+        border-radius: 0 22px 22px 0;
+        font-size: 16px;
+        line-height: 1.2em;
+      }
+      ::-webkit-input-placeholder {
+
+      }
+    }
+  }
+  .social {
+    flex: 1;
+    text-align: right;
+    ul {
+      list-style-type: none;
+      li {
+        display: inline-block;
+        a {
+            background-color: #999;
+            display: block;
+            text-decoration: none;
+            height: 26px;
+            width: 26px;
+            border-radius: 20px;
+            color: #fff;
+            font-size: 18px;
+            padding: 4px 0 0 0;
+            text-align: center;
+            margin-left: 6px;
+            &.icon-social-facebook { background-color: #1764A1; }
+            &.icon-social-twitter { background-color: #26A9E0; }
+            &.icon-social-linkedin { background-color: #1C75BC; }
+        }
+      }
+    }
+  }
+}
+
+// Category Bar Component
+.category-bar {
+  width: 100px;
+  background-color: $cate-bar-bg;
+  .cate-title {
+    font-size: 14px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    text-align: center;
+    margin: 12px 0;
+    color: #E0E0E0;
+    font-weight: bold;
+    padding-bottom: 10px;
+    border-bottom: solid 1px #68516A;
+  }
+  ul.cate-list {
+    list-style-type: none;
+    padding: 0; margin: 0;
+    li {
+      display: block;
+      a {
+        text-decoration: none;
+        color: #FFFFFF;
+        display: block;
+        font-size: 12px;
+        text-align: center;
+        padding: 8px 5px;
+        white-space: nowrap;
+        &:hover, &:focus, &.active {
+          background-color: #00738e;
+        }
+        .cate-icon {
+          width: 40px;
+          margin: 0 auto 5px;
+          opacity: 0.6;
+        }
+        .cate-name {
+          overflow: hidden;
+          text-overflow: ellipsis;
+          text-transform: uppercase;
+        }
+      }
+    }
+  }
+}
+
+// News Container Component
+.news-container {
+  -webkit-flex: 1;
+          flex: 1;
+}
+
+
+// Promotion Component
+.section-promotion {
+  width: 350px;
+  height: 100%;
+  background-color: $promotion-bg;
+  .promo-header {
+    height: 80px;
+    background-color: #194A83;
+    font-family: $roboto-condensed;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #ffffff;
+    text-align: center;
+    -webkit-justify-content: center;
+   justify-content: center;
+    font-size: 26px;
+  }
 }
