@@ -155,9 +155,14 @@ body {
           flex: 1;
 }
 
+// Promotion Lyout
+.layout-promo {
+
+}
 
 // Promotion Component
 .section-promotion {
+  position: relative;
   width: 350px;
   height: 100%;
   background-color: $promotion-bg;
@@ -170,7 +175,109 @@ body {
     color: #ffffff;
     text-align: center;
     -webkit-justify-content: center;
-   justify-content: center;
+    justify-content: center;
     font-size: 26px;
+    margin-bottom: 15px;
+  }
+  .promo-body {
+    text-align: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    margin: 15px 0;
+    .slider-cycle {
+      .item-title {
+        font-size: 18px;
+        font-weight: 700;
+        color: #5FBFFF;
+        margin-bottom: 10px;
+      }
+      .item-desc {
+        font-size: 14px;
+        color: #EFEFEF;
+        margin: 0 30px 30px;
+        height: 30px;
+      }
+    }
+    .owl-carousel {
+      background: url(../images/smart-phone-mock.png) top center no-repeat;
+      background-size: 60%;
+      padding: 36px 85px 0;
+      .owl-stage-outer {
+        padding-bottom: 60px;
+      }
+      div {
+        .phone-placeholder {
+
+        }
+      }
+      .owl-controls {
+        width: 92%;
+        position: absolute;
+        top: 170px;
+        left: 12px;
+        .owl-nav {
+          text-indent: 100%;
+          white-space: nowrap;
+          overflow: hidden;
+          width: 100%;
+          .owl-prev {
+            float: left;
+            position: relative;
+            height: 50px;
+            width: 50px;
+            background-color: transparent;
+            border: 1px solid #7389A4;
+            border-radius: 30px;
+            &:before {
+              font-family: 'icomoon' !important;
+              position: absolute;
+              content: "\e408";
+              color: #fff;
+              font-size: 20px;
+              left: -34px;
+              top: 14px;
+            }
+          }
+          .owl-next {
+            float: right;
+            position: relative;
+            height: 50px;
+            width: 50px;
+            background-color: transparent;
+            border: 1px solid #7389A4;
+            border-radius: 30px;
+            &:before {
+              font-family: 'icomoon' !important;
+              position: absolute;
+              content: "\e409";
+              color: #fff;
+              font-size: 20px;
+              left: -34px;
+              top: 14px;
+            }
+          }
+        }
+      }
+    }
+  }
+  .promo-footer {
+    text-align: center;
+    justify-content: center;
+    border-top: 1px solid rgba(132, 165, 206, 0.22);
+    border-bottom: 1px solid rgba(132, 165, 206, 0.22);
+    height: 90px;
+    .download-text {
+      margin: auto;
+      font-size: 19px;
+      color: #84A5CE;
+      span {
+        display: block;
+        font-size: 26px;
+        color: #F0F0F0;
+      }
+    }
+    .download-appstore {
+      margin: auto;
+    }
   }
 }
